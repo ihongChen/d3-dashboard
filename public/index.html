@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title > chart-sample</title>
+	<!-- Latest compiled and minified bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- c3js css(local) -->
+	<link href="./c3.min.css" rel="stylesheet" type="text/css">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		#chart .c3-line-永豐商業銀行{
+			stroke-width: 5px;
+		}
+	  /*body { font-family: verdana, Times New Roman, 微軟正黑體;}*/
+	</style>
+</head>
+<body>	
+	<script src="https://d3js.org/d3.v3.min.js"></script>	
+	<script src="./c3.js"></script>
+	
+	<script src="./graph.js"></script>
+	<h2> 金融統計資訊</h2>
+	<form>
+		<br>資料種類
+		<select id="type" onchange="plotGraph()">
+			<option value="1">存款餘額</option>
+			<option value="2">外匯餘額</option>
+			<!-- <option value="Firefox">Firefox</option>  -->
+		</select>
+		<div id="chart"></div>
+	</form>
+</body>	
+</html>
